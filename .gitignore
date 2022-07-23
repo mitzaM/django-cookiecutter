@@ -329,3 +329,4 @@ django_cookiecutter/media/
 .ipython/
 .env
 .envs/*
+!.envs/.local/
