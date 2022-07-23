@@ -23,10 +23,8 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           envs: APP_NAME,COMPOSE_FILE
           script: |
-            echo $APP_NAME
-            echo $COMPOSE_FILE
-            # cd $APP_NAME
-            # docker-compose down
-            # git checkout master
-            # git pull origin master
-            # docker-compose up -d
+            cd $APP_NAME
+            docker-compose down
+            git checkout master
+            git pull origin master
+            docker-compose up -d
