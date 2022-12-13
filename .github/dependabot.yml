@@ -31,14 +31,6 @@ updates:
 
   # Enable version updates for Docker
   - package-ecosystem: "docker"
-    # Look for a `Dockerfile` in the `compose/local/node` directory
-    directory: "compose/local/node/"
-    # Check for updates to GitHub Actions every weekday
-    schedule:
-      interval: "daily"
-
-  # Enable version updates for Docker
-  - package-ecosystem: "docker"
     # Look for a `Dockerfile` in the `compose/production/aws` directory
     directory: "compose/production/aws/"
     # Check for updates to GitHub Actions every weekday
